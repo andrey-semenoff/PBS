@@ -1,0 +1,97 @@
+/*! ===== about page ===== */
+.about {
+	margin-bottom: 55px;
+
+	.text-holder {
+		padding: 25px 0;
+	}
+}
+
+.breadcrumbs {
+	margin: 50px 0 25px;
+}
+
+.breadcrumbs__list {
+	
+}
+
+.breadcrumbs__item {
+	display: inline-block;
+
+	&:not(:nth-of-type(1)):before {
+		content: '\f101';
+		margin: 0 15px;
+		font-family: $FontAwesome;
+	}
+	
+}
+
+.breadcrumbs__item_active {
+	.breadcrumbs__link {
+		color: $green;
+	}
+	
+	&:before {
+		color: $green;
+	}
+}
+
+.breadcrumbs__link {
+	display: inline-block;
+	color: #000;
+}
+
+
+
+.about__title {
+
+}
+
+.about-images {
+	margin: 25px 0;
+}
+
+.about-images__list {
+	font-size: 0;
+}
+
+.about-images__item {
+	width: 33.33%;
+	display: inline-block;
+	font-size: 16px;
+}
+
+
+.about-equipment {
+	margin-top: 35px;
+}
+
+.about-equipment__title {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.about-equipment__catpion {
+	margin-top: 25px;
+	font-weight: bold;
+}
+
+.about-equipment__item {
+	position: relative;
+	padding-left: 25px;
+	margin-top: 15px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		width: 8px;
+		height: 8px;
+		background-color: $orange;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+	}
+}

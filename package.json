@@ -1,5 +1,5 @@
 {
-  "name": "project template",
+  "name": "PBS",
   "version": "1.0.0",
   "description": "## Installation: 1. git clone 2. git npm i 3. git bower i 4. gulp",
   "main": "gulpfile.js",

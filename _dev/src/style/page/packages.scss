@@ -1,0 +1,61 @@
+/*! ===== packages page ===== */
+.packages-page {
+  margin-bottom: 100px;
+
+  .readmore {
+    background-color: $orange;
+    color: #000;
+  }
+}
+
+.packages__title {
+  font-size: 30px;
+}
+
+.packages {
+
+}
+
+.packages__list {
+  font-size: 0;
+}
+
+.packages__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 320px;
+  margin-top: 30px;
+  font-size: 16px;
+  margin-left: 28px;
+
+  &:nth-of-type(4n+1) {
+    margin-left: 0;
+  }
+}
+
+.packages__img-holder {
+  position: relative;
+  width: 320px;
+  height: 310px;
+  overflow: hidden;
+  border: 1px solid #dbdbdb;
+}
+
+.packages__img {
+  @include center-translate;
+}
+
+.packages__item-title {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.packages__item-text {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.2rem;
+}
+
+
+

@@ -2,8 +2,11 @@
 
 @include font-face('FontAwesome', '../fonts');
 @include font-face('OpenSans-Regular', '../fonts');
+//@include font-face('OpenSans-Bold', '../fonts');
 
 $OpenSans-Regular: 'OpenSans-Regular', Helvetica, sans-serif;
+//$OpenSans-Bold: 'OpenSans-Bold', Helvetica, sans-serif;
+$FontAwesome: 'FontAwesome', Helvetica, sans-serif;
 
 $green: #37aa34;
 $orange: #fdc300;
@@ -88,15 +91,24 @@ h1, h2, h3, h4, h5, h6, p {
 .button {
   display: inline-block;
   border: none;
+  width: 298px;
+  height: 58px;
+  line-height: 58px;
+  text-align: center;
+  color: $green;
+  background-color: #f3f3f2;
+  transition: all 0.5s;
 
   &:hover {
+    background-color: $green;
+    color: #fff;
     cursor: pointer;
   }
 }
 
 /*! --- standart title --- */
 .title {
-
+  font-size: 30px;
 }
 
 
@@ -145,8 +157,34 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*! --- google-map --- */
 
+.contacts__address-map {
+  position: absolute;
+  left: 55%;
+  bottom: 20%;
+  width: 500px;
+  height: 500px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+
+  &_copy {
+    @extend .contacts__address-map;
+    left: 60%;
+    bottom: 18%;
+    border: 1px solid #ebeae7;
+  }
+}
+
 .google-map {
   position: relative;
+  width: 100%;
+  height: 100%;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .google-map__overlay {

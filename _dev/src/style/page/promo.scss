@@ -1,0 +1,91 @@
+/*! ===== promo page ===== */
+.promo-page {
+
+}
+
+.promo {
+
+}
+
+.promo__list {
+  font-size: 0;
+}
+
+.promo__item {
+  display: inline-block;
+  width: 320px;
+  margin-top: 15px;
+  margin-bottom: 100px;
+  font-size: 16px;
+
+  &:not(:nth-of-type(4n+1)) {
+    margin-left: 20px;
+  }
+
+}
+
+.promo__link {
+  display: inline-block;
+  color: #333;
+  text-align: center;
+
+  &:hover {
+    .promo__item-title {
+      background-color: $orange;
+    }
+  }
+}
+
+.promo__img-holder {
+  position: relative;
+  width: 320px;
+  height: 310px;
+  overflow: hidden;
+  border: 1px solid #dbdbdb;
+
+  &_1 {
+    background: #fff url(../img/promo/1.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  &_2 {
+    background: #fff url(../img/promo/2.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  &_3 {
+    background: #fff url(../img/promo/3.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  &_4 {
+    background: #fff url(../img/promo/4.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  &_5 {
+    background: #fff url(../img/promo/5.jpg) center no-repeat;
+    -webkit-background-size: 200%;
+    background-size: 200%;
+  }
+  &_6 {
+    background: #fff url(../img/promo/6.jpg) -100% -100% no-repeat;
+  }
+  &_7 {
+    background: #fff url(../img/promo/7.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+}
+
+.promo__img {
+  @include center-translate;
+}
+
+.promo__item-title {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 15px;
+  font-weight: bold;
+  border: 1px solid transparent;
+}

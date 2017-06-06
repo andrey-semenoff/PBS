@@ -1,0 +1,29 @@
+/*! ===== promo item page ===== */
+.promo-item-page {
+  margin-bottom: 130px;
+}
+
+.promo-item-images {
+
+}
+
+.promo-item__list {
+  font-size: 0;
+}
+
+.promo-item__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  font-size: 16px;
+
+
+  &:not(:nth-of-type(4n+1)) {
+    margin-left: 50px;
+  }
+}
+
+.promo-item__img {
+  width: 100%;
+}
+

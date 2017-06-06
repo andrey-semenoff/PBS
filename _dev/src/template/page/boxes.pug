@@ -1,0 +1,95 @@
+extends ../main
+
+block content
+	
+	// ====== main ======= 
+	main.boxes-page
+
+		.breadcrumbs
+			ul.breadcrumbs__list
+				li.breadcrumbs__item
+					a.breadcrumbs__link(href="/") Главная
+				li.breadcrumbs__item.breadcrumbs__item_active
+					span.breadcrumbs__link Картонная упаковка
+
+		h1.title.about__title Картонная упаковка
+
+		// ====== main__text =======
+		.text-holder
+			.text-block
+				p "ПБС-Украина" предлагает полный спектр услуг по профессиональной разработке дизайна и производству промышленной и потребительской упаковки из картона. Наша типография оснащена современным высокопроизводительным оборудованием по печати, высечке и машинной склейке картонной упаковки. Производим коробки под заказ для продуктов питания, алкогольной и кондитерской продукции; косметики, посуды, электротехнических товаров; фармацевтическую упаковку, для детских игрушек и товаров промышленной группы.
+			img.text-holder__img(src="img/boxes/box.jpg" alt="box")
+
+
+		// ====== boxes =======
+		.boxes
+			.title.boxes__title Примеры наших работ
+
+			ul.boxes-rows__list
+
+				li.boxes-rows__item
+					ul.boxes__list
+						li.boxes__item
+							a.boxes__link(href="img/boxes/1.jpg" data-fancybox="boxes" title="pic box")
+								img.boxes__img(src="img/boxes/1.jpg" alt="pic box")
+						li.boxes__item
+							a.boxes__link(href="img/boxes/2.jpg" data-fancybox="boxes" title="pic box")
+								img.boxes__img(src="img/boxes/2.jpg" alt="pic box")
+						li.boxes__item
+							a.boxes__link(href="img/boxes/3.jpg" data-fancybox="boxes" title="pic box")
+								img.boxes__img(src="img/boxes/3.jpg" alt="pic box")
+						li.boxes__item
+							a.boxes__link(href="img/boxes/4.jpg" data-fancybox="boxes" title="pic box")
+								img.boxes__img(src="img/boxes/4.jpg" alt="pic box")
+
+				li.boxes-rows__item
+					ul.boxes__list
+						li.boxes__item
+							a.boxes__link(href="img/boxes/5.jpg" data-fancybox="boxes" title="pic box")
+								img.boxes__img(src="img/boxes/5.jpg" alt="pic box")
+						li.boxes__item
+							a.boxes__link(href="img/boxes/6.jpg" data-fancybox="boxes" title="pic box")
+								img.boxes__img(src="img/boxes/6.jpg" alt="pic box")
+						li.boxes__item
+							a.boxes__link(href="img/boxes/7.jpg" data-fancybox="boxes" title="pic box")
+								img.boxes__img(src="img/boxes/7.jpg" alt="pic box")
+						li.boxes__item
+							a.boxes__link(href="img/boxes/8.jpg" data-fancybox="boxes" title="pic box")
+								img.boxes__img(src="img/boxes/8.jpg" alt="pic box")
+
+				li.boxes-rows__item
+					ul.boxes__list
+						li.boxes__item
+							a.boxes__link(href="img/boxes/9.jpg" data-fancybox="boxes" title="pic box")
+								img.boxes__img(src="img/boxes/9.jpg" alt="pic box")
+						li.boxes__item
+							a.boxes__link(href="img/boxes/10.jpg" data-fancybox="boxes" title="pic box")
+								img.boxes__img(src="img/boxes/10.jpg" alt="pic box")
+						li.boxes__item
+							a.boxes__link(href="img/boxes/11.jpg" data-fancybox="boxes" title="pic box")
+								img.boxes__img(src="img/boxes/11.jpg" alt="pic box")
+						li.boxes__item
+							a.boxes__link(href="img/boxes/12.jpg" data-fancybox="boxes" title="pic box")
+								img.boxes__img(src="img/boxes/12.jpg" alt="pic box")
+
+			._row.pagination
+				a.pagination__btn.pagination__btn_prev(href="#")
+					span.fa.fa-angle-double-left
+					span Предыдущая
+				a.pagination__btn.pagination__btn_next(href="#")
+					span Следующая
+					span.fa.fa-angle-double-right
+
+				.pagination__pages
+					ul.pagination__list
+						li.pagination__item.pagination__item_active
+							a.pagination__link(href="#" title="") 1
+						li.pagination__item
+							a.pagination__link(href="#" title="") 2
+						li.pagination__item
+							a.pagination__link(href="#" title="") 3
+						li.pagination__item
+							a.pagination__link(href="#" title="") 4
+
+					a.pagination__showall Показать все
+

@@ -1,0 +1,114 @@
+extends ../main
+
+block content
+	
+	// ====== main ======= 
+	main.serial
+
+		.breadcrumbs
+			ul.breadcrumbs__list
+				li.breadcrumbs__item
+					a.breadcrumbs__link(href="/") Главная
+				li.breadcrumbs__item.breadcrumbs__item_active
+					span.breadcrumbs__link Серийные пакеты
+
+		h1.title.about__title Серийные пакеты
+
+		// ====== main__text =======
+		.text-holder
+			.text-block
+				p Наше предприятие изготавливает подарочные пакеты, предназначенные для реализации в торговых сетях, сувенирных магазинах и магазинах канцтоваров. К продаже мы предлагаем 10 стандартных размеров, которые полностью покрывают спрос покупателя на данный вид продукции. Мы предлагаем широкий ассортимент дизайнов пакетов, а также предоставляем торговое оборудование для размещения в торговых точках.
+
+		// ====== owl-carousel_packages =======
+		.owl-carousel.owl-carousel_colors(data-type="colors")
+
+			.carousel__item
+				a.carousel__item-link(href='#')
+					img.carousel__item-img(src="img/colors/1.png")
+					.carousel__item-title 160X160X60 мм
+
+			.carousel__item
+				a.carousel__item-link(href='#')
+					img.carousel__item-img(src="img/colors/2.png")
+					.carousel__item-title 255X170X70 мм
+
+			.carousel__item
+				a.carousel__item-link(href='#')
+					img.carousel__item-img(src="img/colors/3.png")
+					.carousel__item-title 255X170X70 мм Крафт
+
+			.carousel__item
+				a.carousel__item-link(href='#')
+					img.carousel__item-img(src="img/colors/4.png")
+					.carousel__item-title 230Xv330X100 мм
+
+			.carousel__item
+				a.carousel__item-link(href='#')
+					img.carousel__item-img(src="img/colors/5.png")
+					.carousel__item-title 230X330X100 мм Крафт
+
+			.carousel__item
+				a.carousel__item-link(href='#')
+					img.carousel__item-img(src="img/colors/1.png")
+					.carousel__item-title 160X160X60 мм
+
+			.carousel__item
+				a.carousel__item-link(href='#')
+					img.carousel__item-img(src="img/colors/3.png")
+					.carousel__item-title 160X160X60 мм
+
+
+
+		// ====== patterns =======
+		.patterns
+			ul.patterns__list
+
+				li.patterns__item.pattern
+					a.pattern__img-holder(href="img/patterns/1.jpg" data-fancybox="patterns")
+						img.pattern__img(src='img/patterns/1.jpg' alt='')
+					.pattern__name 7825_PBS_255x170x70_CRAFT_07
+					button.button.pattern__button(type="button" rel="open:form") Заказать
+
+				li.patterns__item.pattern
+					a.pattern__img-holder(href="img/patterns/2.jpg" data-fancybox="patterns")
+						img.pattern__img(src='img/patterns/2.jpg' alt='')
+					.pattern__name 7825_PBS_255x170x70_CRAFT_07
+					button.button.pattern__button(type="button" rel="open:form") Заказать
+
+				li.patterns__item.pattern
+					a.pattern__img-holder(href="img/patterns/3.jpg" data-fancybox="patterns")
+						img.pattern__img(src='img/patterns/3.jpg' alt='')
+					.pattern__name 7825_PBS_255x170x70_CRAFT_07
+					button.button.pattern__button(type="button" rel="open:form") Заказать
+
+				li.patterns__item.pattern
+					a.pattern__img-holder(href="img/patterns/4.jpg" data-fancybox="patterns")
+						img.pattern__img(src='img/patterns/4.jpg' alt='')
+					.pattern__name 7825_PBS_255x170x70_CRAFT_07
+					button.button.pattern__button(type="button" rel="open:form") Заказать
+
+				li.patterns__item.pattern
+					a.pattern__img-holder(href="img/patterns/5.jpg" data-fancybox="patterns")
+						img.pattern__img(src='img/patterns/5.jpg' alt='')
+					.pattern__name 7825_PBS_255x170x70_CRAFT_07
+					button.button.pattern__button(type="button" rel="open:form") Заказать
+
+				li.patterns__item.pattern
+					a.pattern__img-holder(href="img/patterns/6.jpg" data-fancybox="patterns")
+						img.pattern__img(src='img/patterns/6.jpg' alt='')
+					.pattern__name 7825_PBS_255x170x70_CRAFT_07
+					button.button.pattern__button(type="button" rel="open:form") Заказать
+
+		// ====== .owl-carousel = 'patterns' =======
+		.modal.modal_form#modal_form
+			form.form.form_order
+
+				.title.form__title Заявка на просчет
+
+				input.form__input(type="text" name="f_name" placeholder="Имя")
+				input.form__input(type="tel" name="f_phone" placeholder="Телефон")
+				input.form__input(type="email" name="f_email" placeholder="Email")
+
+				button.button.form__button(type="submit") Отправить
+
+

@@ -1,8 +1,11 @@
 /*! ===== header ===== */
 
 header.header {
-	position: relative;
-  padding: 15px 0;
+  	padding: 15px 0 0;
+
+	._row {
+		position: relative;
+	}
 }
 
 .logo {
@@ -83,3 +86,52 @@ header.header {
 	font-size: 18px;
 }
 
+/*! ===== menu ===== */
+.menu {
+	margin-top: 15px;
+	background-color: $green;
+	padding: 10px 0;
+}
+
+.menu__list {
+	font-size: 0;
+	border-top: 1px solid #8eff8b;
+	border-bottom: 1px solid #8eff8b;
+}
+
+.menu__item {
+	display: inline-block;
+	width: 16.66%;
+	text-align: center;
+
+	&_active .menu__link:after {
+		width: 100%;
+		opacity: 1;
+	}
+}
+
+.menu__link {
+	position: relative;
+	display: inline-block;
+	padding: 10px 0;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+
+	&:hover:after {
+		width: 100%;
+		opacity: 1;
+	}
+
+	&:after {
+		opacity: 0;
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		height: 5px;
+		background-color: $orange;
+		transition: all 0.5s;
+	}
+}

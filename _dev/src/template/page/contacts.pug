@@ -1,0 +1,69 @@
+extends ../main
+
+block content
+	
+	// ====== main ======= 
+	main.contacts-page
+
+		.breadcrumbs
+			ul.breadcrumbs__list
+				li.breadcrumbs__item
+					a.breadcrumbs__link(href="/") Главная
+				li.breadcrumbs__item.breadcrumbs__item_active
+					span.breadcrumbs__link Контакты
+
+		h1.title.contacts-page__title Контакты
+
+		hr
+
+		.contacts-page__contacts
+			.contacts-box
+				.contacts-box__title Адрес:
+				.contacts-box__content переулок Ониловой, 18, оф. 4 Одесса, Одесская область, 65000
+
+			.contacts-box
+				.contacts-box__title E-mail:
+				.contacts-box__content
+					a.contacts__email(href='mailto:info@pbsukraine.com.ua') info@pbsukraine.com.ua
+
+			.contacts-box
+				.contacts-box__title Телефон:
+				.contacts-box__content
+					ul.contacts-box__list
+						li.contacts-box__item
+							a.contacts__phone(href='tel:0482330134') (0482) 33 01 34
+						li.contacts-box__item
+							a.contacts__phone(href='tel:0482330135') (0482) 33 01 35
+						li.contacts-box__item
+							a.contacts__phone(href='tel:0482324227') (0482) 32 42 27
+						li.contacts-box__item
+							a.contacts__phone(href='tel:0949468255') (094) 946 82 55
+
+			.contacts__address-map_copy
+			.contacts__address-map
+				.google-map(onMouseLeave="document.querySelector('.google-map__overlay').style.pointerEvents=''")
+					.google-map__overlay(onClick="style.pointerEvents='none'")
+						iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.747416148763!2d30.733550216164584!3d46.47351087912584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63183638b7205%3A0xc66f3634f332085a!2z0L_RgNC-0LLRg9C70L7QuiDQntC90ZbQu9C-0LLQvtGXLCAxOCwg0J7QtNC10YHQsCwg0J7QtNC10YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1496760458099" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen)
+
+		form.contacts-form
+			.contacts-form__title Задать вопрос
+
+			._row
+				label.contacts-form__label.contacts-form__label_left
+					div.contacts-form__caption Имя
+					input.contacts-form__input(type="text" name="f_name")
+
+				label.contacts-form__label.contacts-form__label_right
+					div.contacts-form__caption Email
+					input.contacts-form__input(type="email" name="f_email")
+
+			label.contacts-form__label
+				div.contacts-form__caption Вопрос
+				textarea.contacts-form__textarea(name="f_question")
+
+			.contacts-form__button-holder
+				button.button.contacts-form__button(type="submit")
+					span.fa.fa-paper-plane-o.fa-2x
+					span Отправить
+
+		hr
